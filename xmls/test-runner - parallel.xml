@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Parallel tests" verbose="2"
+       parallel = "tests" thread-count = "2">
+
+    <test name="Parallel">
+        <classes>
+            <class name="tests.aParallelSamples.Parallel"></class>
+        </classes>
+    </test>
+
+    <test name="Parallel2">
+        <classes>
+            <class name="tests.aParallelSamples.Parallel2"></class>
+        </classes>
+    </test>
+
+</suite>
